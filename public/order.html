@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2701638926867971');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2701638926867971&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Confirmed – Hyprion Herbal Capsules</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-dark: #1a3d2b;
+    --green-mid: #2d6a4f;
+    --green-light: #52b788;
+    --green-pale: #b7e4c7;
+    --gold: #d4af37;
+    --cream: #fdf8f0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* NAV */
+  nav {
+    width: 100%;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(45,106,79,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 6%;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.06);
+  }
+  .nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--green-dark);
+  }
+  .nav-brand span { color: var(--gold); }
+
+  /* MAIN */
+  main {
+    width: 100%;
+    max-width: 640px;
+    padding: 40px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  /* CHECKMARK ANIMATION */
+  .check-circle {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, var(--green-light), var(--green-mid));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 30px rgba(45,106,79,0.35);
+    animation: popIn 0.5s cubic-bezier(0.175,0.885,0.32,1.275) both;
+  }
+  .check-circle svg {
+    width: 46px;
+    height: 46px;
+    stroke: white;
+    stroke-width: 3;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    animation: drawCheck 0.5s 0.4s ease forwards;
+  }
+  @keyframes popIn {
+    from { transform: scale(0); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+  }
+  @keyframes drawCheck {
+    to { stroke-dashoffset: 0; }
+  }
+
+  /* HEADLINE */
+  .headline {
+    text-align: center;
+    animation: fadeUp 0.5s 0.2s ease both;
+  }
+  .headline h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+    color: var(--green-dark);
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .headline p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+  }
+
+  /* DELIVERY IMAGE */
+  .delivery-img-wrap {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    animation: fadeUp 0.5s 0.35s ease both;
+    background: #e8f5ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+  }
+  .delivery-img-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  /* Fallback illustration if image fails */
+  .delivery-fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 12px;
+    color: var(--green-mid);
+  }
+  .delivery-fallback .truck { font-size: 4rem; }
+  .delivery-fallback p { font-weight: 600; font-size: 1rem; }
+
+  /* INFO CARD */
+  .info-card {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    animation: fadeUp 0.5s 0.45s ease both;
+  }
+  .info-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--green-dark);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    gap: 12px;
+  }
+  .info-row:last-child { border-bottom: none; }
+  .info-label {
+    font-size: 0.82rem;
+    color: #888;
+    font-weight: 500;
+    min-width: 100px;
+  }
+  .info-value {
+    font-size: 0.92rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+    flex: 1;
+  }
+  .order-id-badge {
+    display: inline-block;
+    background: var(--green-pale);
+    color: var(--green-dark);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  /* WHAT NEXT */
+  .steps-card {
+    width: 100%;
+    background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+    border-radius: 20px;
+    padding: 28px;
+    color: white;
+    animation: fadeUp 0.5s 0.55s ease both;
+  }
+  .steps-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+  }
+  .step {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .step:last-child { margin-bottom: 0; }
+  .step-num {
+    width: 30px;
+    height: 30px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .step-text { font-size: 0.92rem; line-height: 1.55; }
+  .step-text strong { display: block; font-weight: 700; margin-bottom: 2px; }
+
+  /* NOTE */
+  .note {
+    width: 100%;
+    background: #fff8e6;
+    border: 1.5px solid #f0d060;
+    border-radius: 14px;
+    padding: 16px 20px;
+    font-size: 0.88rem;
+    color: #7a5c00;
+    line-height: 1.6;
+    animation: fadeUp 0.5s 0.65s ease both;
+    text-align: center;
+  }
+  .note strong { font-weight: 700; }
+
+  /* BACK LINK */
+  .back-link {
+    font-size: 0.88rem;
+    color: var(--green-mid);
+    text-decoration: none;
+    font-weight: 600;
+    animation: fadeUp 0.5s 0.7s ease both;
+  }
+  .back-link:hover { text-decoration: underline; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Magdora <span>Herbal</span> Wellness</div>
+</nav>
+
+<main>
+
+  <!-- Animated checkmark -->
+  <div class="check-circle">
+    <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+  </div>
+
+  <!-- Headline -->
+  <div class="headline">
+    <h1>Your Order Has Been Placed Successfully! 🎉</h1>
+    <p>Thank you for ordering Hyprion Herbal Capsules. You will receive a confirmation call shortly to confirm your delivery details.</p>
+  </div>
+
+  <!-- Delivery image -->
+  <div class="delivery-img-wrap" id="deliveryImgWrap">
+    <img
+      src="/images/delivery.jpg"
+      alt="Fast Delivery Across Nigeria"
+      onerror="this.parentElement.innerHTML='<div class=\'delivery-fallback\'><div class=\'truck\'>🚚</div><p>Fast Delivery Across Nigeria</p></div>'"
+    >
+  </div>
+
+  <!-- Order summary -->
+  <div class="info-card" id="orderSummary">
+    <h2>📦 Order Summary</h2>
+    <div class="info-row">
+      <span class="info-label">Order ID</span>
+      <span class="info-value"><span class="order-id-badge" id="dispOrderId">—</span></span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Name</span>
+      <span class="info-value" id="dispName">—</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Phone</span>
+      <span class="info-value" id="dispPhone">—</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Package</span>
+      <span class="info-value" id="dispPackage">—</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Delivery To</span>
+      <span class="info-value" id="dispLocation">—</span>
+    </div>
+  </div>
+
+  <!-- Note -->
+  <div class="note">
+    📞 <strong>Please keep your phone on.</strong> Our delivery team will call to confirm your address before dispatch.
+  </div>
+
+  <a href="/hyprion" class="back-link">← Back to product page</a>
+
+</main>
+
+<script>
+  // Load order info from sessionStorage
+  try {
+    const raw = sessionStorage.getItem('hyprion_order');
+    if (raw) {
+      const o = JSON.parse(raw);
+      if (o.orderId)  document.getElementById('dispOrderId').textContent  = o.orderId;
+      if (o.name)     document.getElementById('dispName').textContent     = o.name;
+      if (o.phone)    document.getElementById('dispPhone').textContent    = o.phone;
+      if (o.package)  document.getElementById('dispPackage').textContent  = o.package;
+      const loc = [o.city, o.state].filter(Boolean).join(', ');
+      if (loc)        document.getElementById('dispLocation').textContent = loc;
+      // Clear so it doesn't show on refresh
+      sessionStorage.removeItem('hyprion_order');
+    }
+  } catch(e) {}
+</script>
+</body>
+</html>
